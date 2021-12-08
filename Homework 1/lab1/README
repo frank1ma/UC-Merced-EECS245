@@ -1,0 +1,24 @@
+Problem2
+For GPU occupancy
+nvprof --print-gpu-trace --metrics achieved_occupancy ./lab1_2_1_shared
+nvprof --print-gpu-trace --metrics achieved_occupancy ./lab1_2_1_texture
+nvprof --print-gpu-trace --metrics achieved_occupancy ./lab1_2_1_constant
+
+For DRAM utilization
+nvprof --print-gpu-trace --metrics dram_utilization ./lab1_2_1_shared
+nvprof --print-gpu-trace --metrics dram_utilization ./lab1_2_1_texture
+nvprof --print-gpu-trace --metrics dram_utilization ./lab1_2_1_constant
+
+For L2 cache utilization
+nvprof --print-gpu-trace --metrics l2_utilization ./lab1_2_1_shared
+nvprof --print-gpu-trace --metrics l2_utilization ./lab1_2_1_texture
+nvprof --print-gpu-trace --metrics l2_utilization ./lab1_2_1_constant
+
+
+Problem 3
+For shared memory version
+./lab1_3_mu_shared
+
+For global memory version
+./lab1_3_mu_withoutshared
+

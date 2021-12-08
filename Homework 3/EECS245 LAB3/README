@@ -1,0 +1,17 @@
+All codes were tested on macOS Catalina.
+Version: OpenMP 4.012
+Ready to run in Linux and macOS
+
+Use command-line : mpirun np -4 ./*.c  to run the following codes.  4 is the maximum cores on my laptop. \
+\
+Problem 1:
+Ring block :  ring_block.c 
+Ring nonblack: ring_nonblock.c
+Communicator split:  comm_split.c
+\
+Problem 2:\
+Broadcast value :  collective_mpi1.c
+Broadcast array : collective_mpi2.c 
+\
+Problem 3:
+Cartisian Coordinates: mpicart.c 
